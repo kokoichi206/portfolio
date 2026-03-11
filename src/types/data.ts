@@ -3,8 +3,8 @@ export interface Profile {
   nameJa: string;
   title: string;
   tagline: string;
+  subtitle: string;
   bio: string;
-  motto: string;
   mottos: string[];
   interests: string[];
   personality: {

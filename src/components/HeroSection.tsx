@@ -11,14 +11,11 @@ export const HeroSection = ({ profile }: HeroSectionProps) => {
       <div className="grid grid-cols-1 gap-10 lg:grid-cols-2 lg:items-center lg:gap-16">
         {/* Left: Main intro */}
         <div className="animate-fade-in-up">
-          <p className="mb-4 text-sm font-mono text-sakura-400">{profile.motto}</p>
           <h1 className="text-4xl font-bold tracking-tight text-neutral-100 sm:text-5xl lg:text-6xl">
             kokoichi206
           </h1>
-          <p className="mt-2 text-sm text-neutral-500">{profile.title}</p>
-          <p className="mt-4 text-lg text-neutral-400 leading-relaxed sm:text-xl">
-            {profile.tagline}
-          </p>
+          <p className="mt-4 text-2xl font-bold text-neutral-200 sm:text-3xl">{profile.tagline}</p>
+          <p className="mt-2 text-sm text-neutral-500">{profile.subtitle}</p>
           <p className="mt-6 text-sm text-neutral-500 leading-relaxed">{profile.bio}</p>
           <div className="mt-8">
             <SocialLinks links={profile.links} />
