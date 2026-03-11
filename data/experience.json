@@ -1,0 +1,37 @@
+[
+  {
+    "period": "2025/04 ~",
+    "company": "Freelance",
+    "role": "Tech Lead",
+    "description": "AI SaaS 複数プロダクトの設計・開発。記事自動生成、営業 B2B、広告レポート分析、ヘルスケアアプリ、CS 自動化、Dify ワークフロー構築。",
+    "tech": ["Next.js", "TypeScript", "Go", "Hono", "AWS", "Terraform", "Dify"]
+  },
+  {
+    "period": "2024/05 ~ 2025/03",
+    "company": "Repro Inc.",
+    "role": "Software Engineer",
+    "description": "マーケティング SaaS の新機能開発、AWS→GCP クラウド移行の設計〜実装をリード。",
+    "tech": ["Go", "Next.js", "GCP", "AWS"]
+  },
+  {
+    "period": "2023/01 ~ 2024/04",
+    "company": "OPTiM Inc.",
+    "role": "Software Engineer",
+    "description": "医療系 IoT・手術支援ロボットのデータ可視化 Web 開発。Wasm 導入でフロント・バックのロジック重複を解消。",
+    "tech": ["Go", "Vue 2.x", "Kubernetes", "PostgreSQL", "Wasm"]
+  },
+  {
+    "period": "2022/08 ~ 2022/12",
+    "company": "OPTiM Inc.",
+    "role": "Programmer",
+    "description": "MDM（端末管理）Web サーバーの保守・開発。品質を考慮したコードレビュー体制を構築。",
+    "tech": ["Ruby on Rails", "RSpec"]
+  },
+  {
+    "period": "2021/07 ~ 2022/07",
+    "company": "OPTiM Inc.",
+    "role": "Programmer",
+    "description": "MDM Android アプリの保守・開発。Google ポリシー検知の CI 自動化を提案・実装し手動確認を大幅削減。",
+    "tech": ["Java", "Android Studio", "Appium"]
+  }
+]

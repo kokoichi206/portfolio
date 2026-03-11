@@ -1,0 +1,34 @@
+{
+  "languages": [
+    { "name": "Go", "years": 4, "level": "main" },
+    { "name": "TypeScript", "years": 3, "level": "main" },
+    { "name": "Python", "years": 3, "level": "sub" },
+    { "name": "Kotlin", "years": 2, "level": "sub" },
+    { "name": "Rust", "years": 1, "level": "main" },
+    { "name": "Java", "years": 2, "level": "sub" },
+    { "name": "Swift", "years": 1, "level": "sub" },
+    { "name": "SQL", "years": 4, "level": "sub" },
+    { "name": "Shell/Bash", "years": 3, "level": "sub" },
+    { "name": "Ruby", "years": 0.5, "level": "sub" }
+  ],
+  "frameworks": [
+    "Next.js",
+    "React",
+    "Vue 2.x",
+    "Hono",
+    "Ruby on Rails",
+    "Jetpack Compose",
+    "Flutter"
+  ],
+  "infrastructure": [
+    "AWS",
+    "GCP",
+    "Kubernetes",
+    "Docker",
+    "Terraform",
+    "Supabase",
+    "GitHub Actions"
+  ],
+  "databases": ["PostgreSQL", "MySQL"],
+  "other": ["gRPC", "WebSocket/SSE", "Wasm", "Dify", "Appium"]
+}

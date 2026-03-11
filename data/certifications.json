@@ -1,0 +1,9 @@
+[
+  { "date": "2024-12", "name": "Google Professional Cloud Architect", "abbr": "GCP PCA" },
+  { "date": "2023-10", "name": "IPA Database Specialist", "abbr": "DB" },
+  { "date": "2023-04", "name": "IPA Network Specialist", "abbr": "NW" },
+  { "date": "2023-01", "name": "Statistics Certification Grade Pre-1", "abbr": "Stats" },
+  { "date": "2022-10", "name": "IPA Applied Information Technology Engineer", "abbr": "AP" },
+  { "date": "2022-03", "name": "AWS Solutions Architect Associate", "abbr": "AWS SAA" },
+  { "date": "2020-10", "name": "TOEIC 870", "abbr": "TOEIC" }
+]
