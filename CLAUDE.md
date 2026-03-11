@@ -59,3 +59,7 @@ pnpm test         # vitest
 
 - **コンポーネント設計**: [.claude/rules/component-patterns.md](.claude/rules/component-patterns.md)
 - **テーマシステム**: [.claude/rules/theme-system.md](.claude/rules/theme-system.md)
+
+## Skills (Claude Code カスタムコマンド)
+
+- `/update-data {profile|skill|cert|experience|project|writing}` — data/\*.json のコンテンツ更新ガイド付きで実行
