@@ -51,7 +51,7 @@ html.light {
 
 ```css
 html.light {
-  --color-neutral-100: #171717;  /* dark では白に近い → light では黒に近い */
-  --color-neutral-500: #737373;  /* 中間は維持 */
+  --color-neutral-100: #171717; /* dark では白に近い → light では黒に近い */
+  --color-neutral-500: #737373; /* 中間は維持 */
 }
 ```
