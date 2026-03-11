@@ -1,6 +1,8 @@
 #!/bin/bash
 # PostToolUse hook: run oxfmt + oxlint on edited .ts/.tsx files
+#
 # Exit 2 + stderr = Claude receives feedback and can fix issues
+# See: https://code.claude.com/docs/en/hooks#exit-codes
 
 file_path=$(jq -r '.tool_input.file_path')
 
