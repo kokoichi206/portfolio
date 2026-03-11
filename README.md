@@ -75,4 +75,4 @@ Vercel で自動デプロイ。`main` ブランチへの push でプロダクシ
 
 ## License
 
-MIT
+[MIT](./LICENSE)
