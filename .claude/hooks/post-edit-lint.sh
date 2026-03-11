@@ -1,5 +1,6 @@
 #!/bin/bash
 # PostToolUse hook: run oxfmt + oxlint on edited .ts/.tsx files
+# Exit 2 + stderr = Claude receives feedback and can fix issues
 
 file_path=$(jq -r '.tool_input.file_path')
 
@@ -15,5 +16,17 @@ fi
 
 cd "$CLAUDE_PROJECT_DIR" || exit 0
 
-npx oxfmt "$file_path" 2>&1
-npx oxlint -c oxlint.json "$file_path" 2>&1
+# oxfmt: auto-fix formatting in place
+npx oxfmt "$file_path" > /dev/null 2>&1
+
+# oxlint: check for errors
+lint_output=$(npx oxlint -c oxlint.json "$file_path" 2>&1)
+lint_exit=$?
+
+if [ $lint_exit -ne 0 ]; then
+  echo "oxlint errors in $file_path — fix these issues:" >&2
+  echo "$lint_output" >&2
+  exit 2
+fi
+
+exit 0
