@@ -227,7 +227,7 @@
 **Priority: LOW (but required)**
 
 - GitHub: github.com/kokoichi206
-- Zenn: zenn.dev/kokoichi0206
+- Zenn: zenn.dev/kokoichi206
 - Hatena Blog: link
 - Email or contact form
 

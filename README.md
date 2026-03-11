@@ -1,43 +1,78 @@
-# Astro Starter Kit: Minimal
+# kokoichi206 Portfolio
 
-```sh
-pnpm create astro@latest -- --template minimal
+[![CI](https://github.com/kokoichi206/portfolio/actions/workflows/ci.yml/badge.svg)](https://github.com/kokoichi206/portfolio/actions/workflows/ci.yml)
+
+Software Engineer のポートフォリオサイト。
+
+**https://kokoichi0206.work**
+
+## Tech Stack
+
+- [Astro](https://astro.build/) 6 (Static)
+- [React](https://react.dev/) 19 (Islands Architecture)
+- [Tailwind CSS](https://tailwindcss.com/) 4
+- [TypeScript](https://www.typescriptlang.org/)
+- [Vitest](https://vitest.dev/) + Testing Library
+- [oxlint](https://oxc.rs/docs/guide/usage/linter) / [oxfmt](https://oxc.rs/docs/guide/usage/formatter)
+
+## Getting Started
+
+```bash
+pnpm install
+pnpm dev        # http://localhost:4321
 ```
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+## Commands
 
-## 🚀 Project Structure
+| Command          | Description            |
+| :--------------- | :--------------------- |
+| `pnpm dev`       | 開発サーバー起動       |
+| `pnpm build`     | 本番ビルド (`./dist/`) |
+| `pnpm preview`   | ビルド結果のプレビュー |
+| `pnpm lint`      | oxlint                 |
+| `pnpm fmt`       | oxfmt (自動修正)       |
+| `pnpm fmt:check` | oxfmt (チェックのみ)   |
+| `pnpm check`     | Astro type check       |
+| `pnpm test`      | Vitest                 |
 
-Inside of your Astro project, you'll see the following folders and files:
+## Project Structure
 
-```text
-/
-├── public/
-├── src/
-│   └── pages/
-│       └── index.astro
-└── package.json
+```
+data/                   # コンテンツ JSON
+  profile.json          #   プロフィール・タグライン・リンク
+  skills.json           #   スキル・技術スタック
+  certifications.json   #   資格一覧
+  experience.json       #   職務経歴
+  projects.json         #   OSS / 個人プロジェクト
+  writing.json          #   ブログ・執筆統計
+src/
+  components/           # React コンポーネント (islands)
+  layouts/              # Astro レイアウト
+  pages/                # Astro ページ
+  styles/               # global.css (Tailwind + テーマ変数)
+  types/                # TypeScript 型定義
 ```
 
-Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
+## Updating Content
 
-There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
+コンテンツは全て `data/*.json` で管理しています。JSON を編集して push すれば自動デプロイされます。
 
-Any static assets, like images, can be placed in the `public/` directory.
+| 更新内容         | 編集ファイル               |
+| :--------------- | :------------------------- |
+| プロフィール     | `data/profile.json`        |
+| スキル追加       | `data/skills.json`         |
+| 資格取得         | `data/certifications.json` |
+| 転職・案件追加   | `data/experience.json`     |
+| プロジェクト追加 | `data/projects.json`       |
+| ブログ統計更新   | `data/writing.json`        |
 
-## 🧞 Commands
+## Deploy
 
-All commands are run from the root of the project, from a terminal:
+Vercel で自動デプロイ。`main` ブランチへの push でプロダクション反映。
 
-| Command                | Action                                           |
-| :--------------------- | :----------------------------------------------- |
-| `pnpm install`         | Installs dependencies                            |
-| `pnpm dev`             | Starts local dev server at `localhost:4321`      |
-| `pnpm build`           | Build your production site to `./dist/`          |
-| `pnpm preview`         | Preview your build locally, before deploying     |
-| `pnpm astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `pnpm astro -- --help` | Get help using the Astro CLI                     |
+- Domain: `kokoichi0206.work` (Cloudflare DNS)
+- Preview: PR ごとにプレビューデプロイ
 
-## 👀 Want to learn more?
+## License
 
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+MIT
