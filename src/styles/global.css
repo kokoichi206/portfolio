@@ -1,0 +1,78 @@
+@import "tailwindcss";
+
+@theme {
+  /* Sakura color palette based on #F19DB5 */
+  --color-sakura-50: #fdf2f6;
+  --color-sakura-100: #fce7ef;
+  --color-sakura-200: #f9d0df;
+  --color-sakura-300: #f5aac5;
+  --color-sakura-400: #f19db5;
+  --color-sakura-500: #e4728e;
+  --color-sakura-600: #d14f6e;
+  --color-sakura-700: #b33b56;
+  --color-sakura-800: #953448;
+  --color-sakura-900: #7d2f40;
+
+  /* Semantic theme colors — dark defaults, overridden in .light */
+  --color-bg-dark: #0a0a0a;
+  --color-bg-light: #fafafa;
+  --color-surface-dark: #141414;
+  --color-surface-light: #ffffff;
+  --color-border-dark: #262626;
+  --color-border-light: #e5e5e5;
+}
+
+/* Dark mode by default */
+html {
+  color-scheme: dark;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--color-bg-dark);
+  color: #e5e5e5;
+}
+
+/* Light mode overrides — redefine the same CSS vars so all
+   existing utility classes (bg-surface-dark, border-border-dark, etc.)
+   automatically pick up the light values. */
+html.light {
+  color-scheme: light;
+  --color-bg-dark: #fafafa;
+  --color-surface-dark: #ffffff;
+  --color-border-dark: #e5e5e5;
+}
+
+html.light body {
+  background-color: var(--color-bg-dark);
+  color: #171717;
+}
+
+/* Entrance animations */
+@keyframes fade-in-up {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in-up {
+  animation: fade-in-up 0.5s ease-out both;
+}
+
+/* Neutral overrides for light mode — invert the gray scale */
+html.light {
+  --color-neutral-100: #171717;
+  --color-neutral-200: #262626;
+  --color-neutral-300: #404040;
+  --color-neutral-400: #525252;
+  --color-neutral-500: #737373;
+  --color-neutral-600: #525252;
+  --color-neutral-700: #d4d4d4;
+  --color-neutral-800: #e5e5e5;
+  --color-neutral-900: #f5f5f5;
+}

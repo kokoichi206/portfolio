@@ -1,0 +1,33 @@
+{
+  "name": "Takahiro Tominaga",
+  "nameJa": "冨永 貴弘",
+  "title": "Software Engineer",
+  "tagline": "Go を軸にバックエンドからモバイル・フロントまでフルスタックで開発",
+  "bio": "京都大学大学院 理学研究科 物理学専攻修了。MDM・医療 IoT、マーケティング SaaS の開発を経て、現在はフリーランスのテックリードとして複数の AI SaaS プロダクトを設計・開発しています。",
+  "motto": "1日一つだけ強くなる",
+  "mottos": [
+    "俺の敵はだいたい俺です",
+    "無駄なことをしないと合理的になれない",
+    "不可能を可能にする"
+  ],
+  "interests": [
+    "よいアーキテクチャの追求",
+    "Go とそのエコシステム",
+    "低レイヤーの理解（OS 自作）",
+    "DB の内部実装（RDB を作る）"
+  ],
+  "personality": {
+    "mbti": "ENTJ-A",
+    "strengths": ["独創性", "親密性", "挑戦心", "決断力", "悠然"]
+  },
+  "location": "Tokyo, Japan",
+  "education": "京都大学大学院 理学研究科 物理学専攻 修了",
+  "links": {
+    "github": "https://github.com/kokoichi206",
+    "x": "https://x.com/kokoichi0206",
+    "zenn": "https://zenn.dev/kokoichi0206",
+    "hatena": "https://koko206.hatenablog.com",
+    "email": "tt.300607@gmail.com",
+    "source": "https://github.com/kokoichi206/portfolio"
+  }
+}

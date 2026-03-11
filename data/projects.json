@@ -1,0 +1,30 @@
+[
+  {
+    "name": "koto",
+    "description": "GitHub PR 連携の高速 TUI Todo マネージャー。ターミナルから離れずにタスク管理。",
+    "tech": ["Rust"],
+    "github": "https://github.com/kokoichi206/koto",
+    "tier": 1
+  },
+  {
+    "name": "cc-sakura-line",
+    "description": "Claude Code 用のミニマルで美しい statusline。Rust 製。",
+    "tech": ["Rust"],
+    "github": "https://github.com/kokoichi206/cc-sakura-line",
+    "tier": 1
+  },
+  {
+    "name": "Google Search Navigator",
+    "description": "Google 検索結果をキーボードでナビゲートする Chrome 拡張機能。",
+    "tech": ["TypeScript"],
+    "github": "https://github.com/kokoichi206/chrome-extension-google-search-navigator",
+    "tier": 1
+  },
+  {
+    "name": "envmarker",
+    "description": "開発/ステージング/本番環境をカラーラベルで識別するブラウザ拡張。Chrome, Firefox, Safari, Edge 対応。",
+    "tech": ["JavaScript"],
+    "github": "https://github.com/kokoichi206/envmarker",
+    "tier": 2
+  }
+]
