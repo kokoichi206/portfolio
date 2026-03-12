@@ -14,17 +14,17 @@
     "tier": 1
   },
   {
-    "name": "Google Search Navigator",
-    "description": "Google 検索結果をキーボードでナビゲートする Chrome 拡張機能。",
-    "tech": ["TypeScript"],
-    "github": "https://github.com/kokoichi206/chrome-extension-google-search-navigator",
-    "tier": 1
-  },
-  {
     "name": "envmarker",
     "description": "開発/ステージング/本番環境をカラーラベルで識別するブラウザ拡張。Chrome, Firefox, Safari, Edge 対応。",
-    "tech": ["JavaScript"],
-    "github": "https://github.com/kokoichi206/envmarker",
+    "tech": ["TypeScript"],
+    "github": "https://github.com/kokoichi206/context-marker-extension",
+    "tier": 2
+  },
+  {
+    "name": "dotfiles",
+    "description": "Neovim + zsh 中心の開発環境設定。日々アップデート中。",
+    "tech": ["Lua", "Shell"],
+    "github": "https://github.com/kokoichi206/dotfiles",
     "tier": 2
   }
 ]
