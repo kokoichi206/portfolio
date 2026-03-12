@@ -34,7 +34,7 @@ const writing = writingData as WritingStats;
     <HeroSection profile={profile} />
 
     <!-- Skills (Bento Grid) -->
-    <section id="skills" class="py-16">
+    <section id="skills" class="py-8">
       <SectionHeading title="Skills" subtitle="Technologies I work with" />
       <div class="grid grid-cols-1 gap-4 md:grid-cols-2">
         <SkillsCard skills={skills} />
@@ -46,7 +46,7 @@ const writing = writingData as WritingStats;
     </section>
 
     <!-- Projects -->
-    <section id="projects" class="py-16">
+    <section id="projects" class="py-8">
       <SectionHeading title="Projects" subtitle="Open source and personal projects" />
       <div class="grid grid-cols-1 gap-4 sm:grid-cols-2">
         {projects.map((project) => (
@@ -56,13 +56,13 @@ const writing = writingData as WritingStats;
     </section>
 
     <!-- Experience -->
-    <section id="experience" class="py-16">
+    <section id="experience" class="py-8">
       <SectionHeading title="Experience" subtitle="Career timeline" />
       <ExperienceCard experiences={experiences} />
     </section>
 
     <!-- Writing -->
-    <section id="writing" class="py-16">
+    <section id="writing" class="py-8">
       <SectionHeading title="Writing" subtitle="Technical articles and learning" />
       <WritingSection
         hatenaCount={writing.stats.hatenaCount}
