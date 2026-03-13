@@ -1,4 +1,4 @@
-import type { Certification } from "../types/data";
+import type { Certification } from "@/types/data";
 
 interface CertBadgeProps {
   cert: Certification;

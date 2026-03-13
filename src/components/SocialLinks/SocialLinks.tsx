@@ -1,4 +1,6 @@
-interface SocialLinksProps {
+export const SocialLinks = ({
+  links,
+}: {
   links: {
     github: string;
     x: string;
@@ -7,9 +9,7 @@ interface SocialLinksProps {
     email: string;
     source: string;
   };
-}
-
-export const SocialLinks = ({ links }: SocialLinksProps) => {
+}) => {
   const items = [
     { label: "GitHub", href: links.github, icon: "github" },
     { label: "X", href: links.x, icon: "x" },

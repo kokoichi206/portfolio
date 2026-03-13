@@ -1,18 +1,16 @@
-interface WritingSectionProps {
-  hatenaCount: number;
-  zennCount: number;
-  tilCategories: number;
-  hatenaUrl: string;
-  zennUrl: string;
-}
-
 export const WritingSection = ({
   hatenaCount,
   zennCount,
   tilCategories,
   hatenaUrl,
   zennUrl,
-}: WritingSectionProps) => {
+}: {
+  hatenaCount: number;
+  zennCount: number;
+  tilCategories: number;
+  hatenaUrl: string;
+  zennUrl: string;
+}) => {
   const stats = [
     { label: "Hatena Blog", count: `${hatenaCount}+`, href: hatenaUrl },
     { label: "Zenn", count: `${zennCount}`, href: zennUrl },

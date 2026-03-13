@@ -1,5 +1,5 @@
-import type { Certification } from "../types/data";
-import { CertBadge } from "./CertBadge";
+import type { Certification } from "@/types/data";
+import { CertBadge } from "@/components/CertBadge/CertBadge";
 
 interface CertsCardProps {
   certs: Certification[];

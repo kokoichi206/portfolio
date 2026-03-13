@@ -1,11 +1,7 @@
-import type { Skills } from "../types/data";
-import { SkillBadge } from "./SkillBadge";
+import type { Skills } from "@/types/data";
+import { SkillBadge } from "@/components/SkillBadge/SkillBadge";
 
-interface SkillsCardProps {
-  skills: Skills;
-}
-
-export const SkillsCard = ({ skills }: SkillsCardProps) => {
+export const SkillsCard = ({ skills }: { skills: Skills }) => {
   return (
     <div className="rounded-2xl border border-border-dark bg-surface-dark p-6 transition-colors hover:border-sakura-400/30">
       <div className="space-y-6">
