@@ -1,6 +1,10 @@
 @import "tailwindcss";
 
 @theme {
+  /* Font families */
+  --font-sans: "Inter", "IBM Plex Sans JP", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, monospace;
+
   /* Sakura color palette based on #F19DB5 */
   --color-sakura-50: #fdf2f6;
   --color-sakura-100: #fce7ef;
