@@ -1,10 +1,8 @@
-interface SkillBadgeProps {
+export const SkillBadge = ({ name, years, variant = "default" }: {
   name: string;
   years?: number;
   variant?: "main" | "sub" | "default";
-}
-
-export const SkillBadge = ({ name, years, variant = "default" }: SkillBadgeProps) => {
+}) => {
   const variantClass =
     variant === "main"
       ? "border-sakura-400/40 bg-sakura-400/10 text-sakura-300"

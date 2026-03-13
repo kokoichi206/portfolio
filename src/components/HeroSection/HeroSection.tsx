@@ -1,5 +1,5 @@
-import type { Profile } from "../types/data";
-import { SocialLinks } from "./SocialLinks";
+import type { Profile } from "@/types/data";
+import { SocialLinks } from "@/components/SocialLinks/SocialLinks";
 
 interface HeroSectionProps {
   profile: Profile;

@@ -1,4 +1,4 @@
-import { ThemeToggle } from "./ThemeToggle";
+import { ThemeToggle } from "@/components/ThemeToggle/ThemeToggle";
 
 export const Header = () => {
   const navItems = [

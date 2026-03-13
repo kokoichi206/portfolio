@@ -2,6 +2,12 @@ import type { Preview } from "@storybook/react";
 import "../src/styles/global.css";
 
 const preview: Preview = {
+  decorators: [
+    (Story) => {
+      document.documentElement.classList.add("dark");
+      return <Story />;
+    },
+  ],
   parameters: {
     backgrounds: {
       default: "dark",
