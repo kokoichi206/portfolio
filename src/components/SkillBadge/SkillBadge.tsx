@@ -1,4 +1,8 @@
-export const SkillBadge = ({ name, years, variant = "default" }: {
+export const SkillBadge = ({
+  name,
+  years,
+  variant = "default",
+}: {
   name: string;
   years?: number;
   variant?: "main" | "sub" | "default";

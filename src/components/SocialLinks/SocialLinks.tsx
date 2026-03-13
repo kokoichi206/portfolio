@@ -1,4 +1,6 @@
-export const SocialLinks = ({ links }: {
+export const SocialLinks = ({
+  links,
+}: {
   links: {
     github: string;
     x: string;
